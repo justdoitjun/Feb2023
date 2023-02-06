@@ -1,0 +1,167 @@
+
+/* 전체 구성 */
+
+.container{
+    display : flex;
+    justify-content: flex-start;
+    height : 700px;
+    width : 1200px;
+    }
+
+/* 헤더부분 */
+.header{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    height : 100%;
+    width : 20%;
+    border-right : solid;
+    border-color : black;
+    background-color: white;
+/*     display : flex;
+    flex-direction: column; */ /* 축을 결정해주는 것. 기본 값은 가로지만, 이걸 사용해서 세로로 축을 바꿈 */
+    /* 축을 결정했다면 가운데 축을 중심으로 꼬치에 있는 아이템들을 스페이싱함 */
+    }
+
+/* 섹션부분 */
+.section{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    height : 100%;
+    width : 60%;
+    display : flex;
+    }
+/* 푸터부분 */
+.footer{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    height : 100%;
+    width : 20%;
+    background-color: white;
+    }
+
+/* =============================================================================================================== */
+
+/* 헤더부분-세부사항 */
+ .header1{
+    box-sizing : border-box;
+    /* position : relative; */ 
+    height : 80%;
+    margin-bottom : 60px;
+    /*     border-radius: 70%;
+    border-color : pink; */
+    
+}
+
+header > .class{
+    margin-top : 20px;
+   /*  position : absolute; */
+}
+
+.header1 >div{
+    margin-bottom : 10px; 
+    border-radius: 70%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* 섹션부분-세부사항 */
+.voids{
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+    height : 100%;
+    width : 40%;
+    background-color : white;
+}
+.mains{
+    box-sizing: border-box;
+    height : 100%;
+    width : 60%;
+    border-left-width : 1px;
+
+}
+.story{
+    box-sizing : border-box;
+    margin : 10px;
+    padding : 10px 10px 10px 10px;
+    height : 15%;
+    border : solid;
+    border-width : 1px;
+    border-radius : 10px;
+    background-color : white;
+    display : flex;
+    justify-content: space-between;
+    font-size : 15px;
+}
+/* #storypicbox{
+    border-color : pink;
+    border-width : 1px;
+    overflow : hidden;
+}
+#storypic{
+    border-color : pink;
+    border-width : 10px;
+    object-fit : cover;
+} */
+.posts{
+    box-sizing : border-box;
+    height : 85%;
+    background-color : white;
+    margin : 10px;
+    padding : 10px 10px 10px 10px;
+    border : solid;
+    border-width : 1px;
+    border-radius : 10px;
+    display : block;
+}
+.postsbar{
+    display : flex;
+    font-size : 20px;
+}
+#id{
+    margin-left: 20px;
+}
+#postmore{
+    margin-left : 212px;
+}
+.reaction{
+    display : flex;
+}
+#comment{
+    margin-left : 20px;
+}
+#paperplane{
+    margin-left : 20px;
+}
+#bookmark{
+    margin-left : 230px;
+    font-size : 15px;
+}
+.commentbar{
+    display : flex;
+}
+#commentbox{
+    overflow : hidden;
+}
+#fun{
+    font-size : 15px;
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/*푸터부분-세부사항 */
+.recom{
+    display : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* 미디어쿼리 */
+@media screen (max-width : 600px){
+.container{width:10%;}
+}
